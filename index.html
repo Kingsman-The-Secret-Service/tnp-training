@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Tamil Nadu Police portal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1000, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oxygen:400,700"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+
+  </head>
+  <body>
+
+    <div id="page_container">
+
+      <h1>Tamil Nadu Police</h1>
+
+      <button type="button" class="button" id="add_victim">Add Victim Details</button>
+
+      <table class="datatable" id="table_victims">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Crime Location</th>
+            <th>Crime Date</th>
+            <th>Victim Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+    </div>
+    <div class="lightbox_bg"></div>
+
+    <div class="lightbox_container">
+      <div class="lightbox_close"></div>
+      <div class="lightbox_content">
+        
+        <!-- form start-->
+        <h2>Add Victim Details</h2>
+        <form class="form add" id="form_victim" data-id="" novalidate>
+          <div class="input_container">
+            <label for="no">No: <span class="required">*</span></label>
+            <div class="field_container">
+              <input type="number" step="1" min="0" class="text" name="no" id="no" value="" required>
+            </div>
+          </div>
+          <div class="input_container">
+            <label for="name">Victim Name: <span class="required">*</span></label>
+            <div class="field_container">
+              <input type="text" class="text" name="name" id="name" value="" required>
+            </div>
+          </div>
+          <div class="input_container">
+            <label for="gender">Gender: <span class="required">*</span></label>
+            <div class="form-group field_container">
+              <select name="gender" id="gender"  class="form-control" required> 
+                <option value="">Select Gender</option>
+                <option value="t">Transgender</option>
+                <option value="f">Female</option>
+                <option value="m">Male</option>
+            </select>
+            </div>
+          <div class="input_container">
+            <label for="address">Address: <span class="required">*</span></label>
+            <div class="field_container">
+              <input type="text" class="text" name="address" id="address" value="" required>
+            </div>
+          </div>
+          <div class="input_container">
+            <label for="mobile">Mobile: <span class="required">*</span></label>
+            <div class="field_container">
+              <input type="text" class="text" name="mobile" id="mobile" value="" required>
+            </div>
+          </div>
+          <div class="input_container">
+            <label for="location">Location: <span class="required">*</span></label>
+            <div class="field_container">
+              <input type="text" class="text" name="location" id="location" value="" required>
+            </div>
+          </div>
+          <div class="input_container">
+            <label for="cdate">Date: <span class="required">*</span></label>
+            <div class="field_container">
+              <input type="date" class="text" name="date" id="date" value="" required>
+            </div>
+          </div>
+          <div class="input_container">
+            <label for="status">Status: <span class="required">*</span></label>
+            <div class="field_container">
+
+            <select name="status" id="status" class="form-control" required> 
+              <option value="">Select Status</option>
+              <option value="open">Open</option>
+              <option value="yts">Yet to Start</option>
+              <option value="progress">In Progress</option>
+              <option value="closed">Closed</option>
+            </select>
+            </div>
+          </div>
+          <div class="button_container">
+            <button type="submit">Add victim details</button>
+          </div>
+        </form>
+        <!-- form end -->
+        
+      </div>
+    </div>
+
+    <noscript id="noscript_container">
+      <div id="noscript" class="error">
+        <p>JavaScript support is needed to use this page.</p>
+      </div>
+    </noscript>
+
+    <div id="message_container">
+      <div id="message" class="success">
+        <p>This is a success message.</p>
+      </div>
+    </div>
+
+    <div id="loading_container">
+      <div id="loading_container2">
+        <div id="loading_container3">
+          <div id="loading_container4">
+            Loading, please wait...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script charset="utf-8" src="js/jquery.min.js"></script>
+    <script charset="utf-8" src="js/bootstrap.min.js"></script
+>    <script charset="utf-8" src="js/jquery.dataTables.js"></script>
+    <script charset="utf-8" src="js/jquery.validate.min.js"></script>
+    <script charset="utf-8" src="js/webapp.js"></script>
+
+  </body>
+
+  <script type="text/javascript">
+    
+    console.log($("document"));
+  </script>
+</html>

@@ -9,7 +9,6 @@ namespace cctns;
 //create new config file (with ext4ension .ini)
 
 class PDO extends PDO{
-	
 
 }
 
